@@ -96,7 +96,7 @@ resource "aws_eks_cluster" "devopsshack" {
   }
 }
 
-resource "aws_eks_node_group" "devopsshack" {
+resource "aws_eks_node_group" "mumbai777" {
   cluster_name    = aws_eks_cluster.devopsshack.name
   node_group_name = "devopsshack-node-group"
   node_role_arn   = aws_iam_role.devopsshack_node_group_role.arn
