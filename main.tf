@@ -86,7 +86,7 @@ resource "aws_security_group" "devopsshack_node_sg" {
   }
 }
 
-resource "aws_eks_cluster" "mumbai777" {
+resource "aws_eks_cluster" "devopsshack" {
   name     = "devopsshack-cluster"
   role_arn = aws_iam_role.devopsshack_cluster_role.arn
 
@@ -96,7 +96,7 @@ resource "aws_eks_cluster" "mumbai777" {
   }
 }
 
-resource "aws_eks_node_group" "mumbai777" {
+resource "aws_eks_node_group" "devopsshack" {
   cluster_name    = aws_eks_cluster.devopsshack.name
   node_group_name = "devopsshack-node-group"
   node_role_arn   = aws_iam_role.devopsshack_node_group_role.arn
